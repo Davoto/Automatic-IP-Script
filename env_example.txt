@@ -1,0 +1,6 @@
+# voorbeeld variabelen nodig voor dit script vervang alle "*x*" om dit werkend te krijgen.
+AUTH_KEY = "Bearer *CLOUDFLARE API KEY*"
+AUTH_MAIL = "*Cloudflare user email*"
+DOMAIN = "*Domein/subdomein*"
+ZONE_ID = "*Zone ID*"
+DNS_ID = "*DNS ID*"
