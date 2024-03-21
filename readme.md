@@ -19,12 +19,14 @@ have issues with networks that require DHCP and want to keep using the same doma
 2. After you've done that you should go to the main dashboard on Cloudflare look at manage account and then Audit log.
 You'll see an action called create or update on top where you need to get two ID's the ID of your domain and your zone-ID. 
 These two in this screenshot:
+![screenshot1](https://github.com/Davoto/Automatic-IP-Script/assets/144310477/d3dce739-a6d8-4ae5-a511-cc7e22a20b83)
 
-3. Now you're only going to need an API key by going to your profile and going to API Tokens, making one using the template 
+
+4. Now you're only going to need an API key by going to your profile and going to API Tokens, making one using the template 
 Edit zone DNS and selecting either all zones at Zone Resources or selecting the domain, next click on continue and create token.
 Tip: Save this API Token somewhere since you can't see it again after leaving this page.
 
-4. With this data you should be able to go to Setup script.
+5. With this data you should be able to go to Setup script.
 
 ## Setup script
 
