@@ -37,7 +37,7 @@ if __name__ == '__main__':
     load_dotenv('.env', override=True)
     LOCAL_IP_NEW = get_ip()
     LOCAL_IP = os.getenv('LOCAL_IP')
-    print(f"Dit is het lokale ip: {LOCAL_IP_NEW}")
+    print(f"This is the local IP: {LOCAL_IP_NEW}")
     if LOCAL_IP_NEW != LOCAL_IP:
         AUTH_KEY = os.getenv('AUTH_KEY')
         AUTH_MAIL = os.getenv('AUTH_MAIL')
@@ -48,4 +48,4 @@ if __name__ == '__main__':
         set_key('.env', 'LOCAL_IP', os.environ['LOCAL_IP'])
         cloudflare_update(LOCAL_IP_NEW, DOMAIN, ZONE_ID, DNS_ID, AUTH_KEY, AUTH_MAIL)
     else:
-        print('IP is nog niet veranderd.')
+        print('IP has not changed.')
