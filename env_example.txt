@@ -1,4 +1,4 @@
-# Example variables neededfor this script change all "*x*" to make this script work.
+# Example variables needed for this script change all "*x*" to make this script work.
 AUTH_KEY = "Bearer *CLOUDFLARE API KEY*"
 AUTH_MAIL = "*Cloudflare user email*"
 DOMAIN = "*Domain/subdomain*"
