@@ -53,8 +53,8 @@ the information acquired in Setup domain.
    This is the local IP: *local IP*
    {Bunch of ugly json}
    ```
-   Important is to look for one thing in the json that says `"succes":true` if it's false you should check your .env 
-file otherwise you're good to go.
+   Important is to look for one thing in the json that says `"succes":true` if its true you're good to go. if it's false
+you should check your .env file for the correct ID's and remove the line that says LOCAL_IP="*Insert IP*" and try again.
 
 6. Last step add the script to a crontab:
 
