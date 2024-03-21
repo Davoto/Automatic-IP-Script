@@ -1,4 +1,4 @@
-# Cloudflare Automatic IP Script
+# Automatic IP Script (for Cloudflare DNS)
 This little script updates your cloudflare DNS settings of a domain to your local IP, this script is for people that have issues with networks that require DHCP and want to keep using the same domain.
 
 ## Requirements
