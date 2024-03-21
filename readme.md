@@ -31,22 +31,30 @@ Tip: Save this API Token somewhere since you can't see it again after leaving th
 
 1. Download the repository using git:
    
-   `git clone https://github.com/Davoto/Automatic-IP-Script.git`
+   ```
+   git clone https://github.com/Davoto/Automatic-IP-Script.git
+   ```
+   
+2. Make sure to install python 3, pip and cron like this:
 
-2. Install python 3, pip and cron like this:
-
-    `sudo apt install python3 python3-pip cron`
-
+   ```
+   sudo apt install python3 python3-pip cron
+   ```
+   
 3. Use pip to install 'python-dotenv'
-
-    `sudo pip install python-dotenv`
-
+   
+   ```
+   sudo pip install python-dotenv
+   ```
+   
 4. Make a file called `.env` in the folder where the script is located and fill it in like `env_example.txt` but with 
 the information acquired in Setup domain.
 
 5. Test the script by running like this:
    
-   `python3 ./main.py`
+   ```   
+   python3 ./main.py
+   ```
    
    You will probably get a message like this:
    
@@ -54,16 +62,21 @@ the information acquired in Setup domain.
    This is the local IP: *local IP*
    {Bunch of ugly json}
    ```
+   
    Important is to look for one thing in the json that says `"succes":true` if its true you're good to go. if it's false
 you should check your .env file for the correct ID's and remove the line that says LOCAL_IP="*Insert IP*" and try again.
 
 6. Last step add the script to a crontab:
 
-   `crontab -e`
+   ```
+   crontab -e
+   ```
    
    Then add to this file that opens (change the path if you downloaded the script in a different folder.):
-
-   `0 * * * * python3 /home/"Username"/Automatic-IP-Script/main.py`
-
+   
+   ```
+   0 * * * * python3 /home/"Username"/Automatic-IP-Script/main.py
+   ```
+   
    This should make this script run at every hour of the day to make sure your domain keeps updated.
    
