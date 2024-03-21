@@ -34,7 +34,7 @@ def cloudflare_update(host_ip, domain, zone_id, dns_id, auth_key, auth_mail):
 
 
 if __name__ == '__main__':
-    load_dotenv('.env', override=True)
+    load_dotenv('./.env', override=True)
     LOCAL_IP_NEW = get_ip()
     LOCAL_IP = os.getenv('LOCAL_IP')
     print(f"This is the local IP: {LOCAL_IP_NEW}")
