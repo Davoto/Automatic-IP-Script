@@ -41,7 +41,7 @@ Tip: Save this API Token somewhere since you can't see it again after leaving th
    sudo apt install python3 python3-pip cron
    ```
    
-3. Use pip to install 'python-dotenv'
+3. Use pip to install 'python-dotenv' (For Raspberry PI OS skip this step) 
    
    ```
    sudo pip install python-dotenv
