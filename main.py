@@ -53,7 +53,7 @@ if __name__ == '__main__':
             print(f'API-CALL Successful.\n\"{json_result["result"]["name"]}\" has been updated.')
         else:
             print('API-CALL Unsuccessful.\nPlease check your .env file in the program\'s folder.\n'
-                  'Here the JSON for further debugging:')
+                  'Here the JSON for further error-finding:')
             print(dumps(json_result, indent=2))
     else:
         print('IP has not changed.')
