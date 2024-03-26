@@ -50,7 +50,7 @@ if __name__ == '__main__':
             os.environ['LOCAL_IP'] = LOCAL_IP_NEW
             set_key(path, 'LOCAL_IP', os.environ['LOCAL_IP'])
 
-            print(f'API-CALL Successful.\n{json_result["result"]["name"]} has been updated.')
+            print(f'API-CALL Successful.\n\"{json_result["result"]["name"]}\" has been updated.')
         else:
             print('API-CALL Unsuccessful.\nPlease check your .env file in the program\'s folder.\n'
                   'Here the JSON for further debugging:')
