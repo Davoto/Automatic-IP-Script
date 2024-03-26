@@ -76,7 +76,8 @@ you should check your .env file for the correct ID's and remove the line that sa
    
    ```
    0 * * * * python3 /home/"Username"/Automatic-IP-Script/main.py
+   @reboot python3 /home/"Username"/Automatic-IP-Script/main.py
    ```
    
-   This should make this script run at every hour of the day to make sure your domain keeps updated.
+   This should make this script run at every hour of the day and also at startup to make sure your domain keeps updated.
    
