@@ -56,16 +56,16 @@ the information acquired in Setup domain.
    python3 ./main.py
    ```
    
-   You will probably get a message like this:
+   You will hopefully get a message like this:
    
    ```
    This is the local IP: *local IP*
-   {Bunch of ugly json}
+   API-CALL Successful.
+   "Example.com" has been updated.
    ```
    
-   Important is to look for one thing in the json that says `"succes":true` if its true you're good to go. if it's false
-you should check your .env file for the correct ID's and remove the line that says LOCAL_IP="*Insert IP*" and try again.
-
+   If there is an error you should check your .env file.
+   
 6. Last step add the script to a crontab:
 
    ```
