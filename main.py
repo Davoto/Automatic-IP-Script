@@ -8,8 +8,8 @@ from dotenv import load_dotenv, set_key
 
 
 def get_ip():
-    host_ip = subprocess.check_output("hostname -I", shell=True).decode(sys.stdout.encoding).strip()
-    return host_ip
+    host_ip = subprocess.check_output("hostname -I", shell=True).decode(sys.stdout.encoding).strip().split(' ')
+    return host_ip[0]
 
 
 def cloudflare_update(host_ip, domain, zone_id, dns_id, auth_key, auth_mail):

@@ -9,7 +9,6 @@ have issues with networks that require DHCP and want to keep using the same doma
 - Python 3 (Tested on 3.10)
 - Pip package 'python-dotenv'
 - Cron
-- A single network connection.
 
 ## Setup domain
 
