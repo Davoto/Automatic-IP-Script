@@ -74,9 +74,9 @@ the information acquired in Setup domain.
    Then add to this file that opens (change the path if you downloaded the script in a different folder.):
    
    ```
-   0 * * * * python3 /home/"Username"/Automatic-IP-Script/main.py
+   */15 * * * * python3 /home/"Username"/Automatic-IP-Script/main.py
    @reboot python3 /home/"Username"/Automatic-IP-Script/main.py
    ```
    
-   This should make this script run at every hour of the day and also at startup to make sure your domain keeps updated.
+   This should make this script run every 15 minutes of the day and also at startup to make sure your domain keeps updated.
    
